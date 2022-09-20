@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburger {
+    background-image: url(../img/MenuAberto.svg);
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -86,7 +94,7 @@
     }
 
     .opcoes__item {
-        padding: 1em 1em 0 1em;
+        padding: 2em 1em;
         text-transform: uppercase;
         margin-left: 2em;
     }
@@ -106,6 +114,12 @@
         display: block;
         width: auto;
     }    
+
+    .opcoes__botao:checked~.opcoes__rotulo>.opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+    
 }
 
 
